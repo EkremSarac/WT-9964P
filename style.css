@@ -1,0 +1,233 @@
+.navbar {
+    position: fixed !important;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+
+.circle {
+    content: "";
+    width: 10px;
+    height: 500px;
+    background: rgb(217,102,40);
+    background: linear-gradient(90deg, rgba(217,102,40,1) 0%, rgba(217,102,40,1) 35%, rgba(0,189,255,1) 100%);
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle::before{
+    content: "x";
+    color: rgb(226, 116, 43);
+    font-size: 30px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: rotate(-10deg);
+}
+
+.circle::after {
+    content: "x";
+    color:rgba(0,189,255,1);
+    font-size: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: rotate(15deg);
+}
+
+#message {
+    padding-right: 5px;
+}
+
+.navbar-brand:hover {
+    color: blue !important;
+}
+
+ul li i {
+    padding: 10px 5px !important;
+    margin-left: 5px !important;
+}
+
+ul li .btn {
+    border-radius: 40px !important;
+}
+
+ul li a {
+    font-size: 17px !important;
+}
+
+ul li a:hover {
+    color: rgba(62, 62, 62, 0.56) !important;
+}
+
+.showcase-container {
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+
+.phone {
+    width: 300px;
+}
+
+.playstore, .appstore {
+    height: 3rem;
+}
+
+
+.appinfo {
+    background: linear-gradient(to right, rgb(222, 213, 92), rgb(206, 95, 31));
+}
+
+.circle-2 {
+    content: "";
+    width: 300px;
+    height: 300px;
+    background: rgb(217,102,40);
+    background: linear-gradient(90deg, rgba(217,102,40,1) 0%, rgba(217,102,40,1) 35%, rgba(0,189,255,1) 100%);
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-2::before {
+    content: "x";
+    color: rgba(0,189,255,1);
+    font-size: 30px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: rotate(-15deg);
+}
+
+.circle-2::after {
+    content: "a";
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: rgba(217,102,40,1);
+    font-size: 30px;
+    transform: rotate(15deg);
+    margin-right: -50px;
+}
+
+.img-phone-2 {
+    max-width: 90%;
+    margin-left: 65px;
+}
+
+
+.phone-icon {
+    color: rgba(0,189,255,1);
+}
+
+.icons {
+    background: linear-gradient(0deg, rgba(217,102,40,1) 25%, rgba(0,189,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.download {
+    background-image: url("https://removal.ai/wp-content/uploads/2021/09/black-background-09-wallpaperaccess.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 20vh;
+    width: 100%;
+}
+
+.download-btn {
+    border-radius: 40px !important;
+    font-size: 1.25rem !important;
+    padding: 20px 30px !important;
+    transition: 0.3s ease !important;
+}
+
+.getapp-container {
+    background: rgb(217,102,40);
+background: radial-gradient(circle, rgba(217,102,40,1) 0%, rgba(217,102,40,1) 21%, rgba(0,189,255,1) 91%);
+height: 25vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.getapp {
+    font-family: 'Poppins', sans-serif;
+}
+
+.start-bs {
+    font-family: 'Poppins', sans-serif;
+}
+
+.copyright-container {
+    background-color: black;
+}
+
+
+.privacy {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.511);
+}
+
+.nav-link.active {
+    color: blue !important;
+}
+
+
+.modal-header {
+    background: rgb(0,189,255);
+background: linear-gradient(90deg, rgba(0,189,255,1) 5%, rgba(217,102,40,1) 94%);
+}
+
+.exampleModalLabel {
+    font-family: 'Poppins', sans-serif;
+}
+
+#gonder {
+    border-radius: 25px;
+    margin-top: 15px;
+    width: 75%;
+    height: 50px;
+    
+}
+
+@media (max-width: 768px) {
+    .circle {
+        display: none; 
+    }
+}
+
+@media (max-width: 768px) {
+    .circle-2 {
+        display: none; 
+    }
+}
+
+@media (max-width: 768px) {
+    .circle, .circle-2 {
+        display: none; /* md boyutundan küçük ekranlarda gizler */
+    }
+}
+
+
+.phone {
+    width: 100%; /* Geniş ekranlarda tam boyutunu korur */
+    max-width: 300px; /* Maksimum genişlik limiti */
+    height: auto; /* Oranını koruyarak yükseklik otomatik ayarlanır */
+    margin: 0 auto; /* Telefonları ortalar */
+}
+
+@media (max-width: 768px) {
+    .phone {
+        width: 80%; /* Mobil ekranlarda telefon daha küçük görünsün */
+        max-width: 250px;
+    }
+}
